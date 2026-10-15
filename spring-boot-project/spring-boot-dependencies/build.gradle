@@ -457,7 +457,7 @@ bom {
 			]
 		}
 	}
-	library("Hibernate", "5.6.15.Final-backpatch-00001") {
+	library("Hibernate", "5.6.15.Final-osera-00001") {
 		prohibit {
 			versionRange "[6.0.0.Alpha2,)"
 			because "it uses the jakarta.* namespace"
@@ -969,7 +969,7 @@ bom {
 			]
 		}
 	}
-	library("Jetty", "9.4.58.v20250814-backpatch-00004") {
+	library("Jetty", "9.4.58.v20250814-osera-00004") {
 		prohibit {
 			versionRange "[10.0.0-alpha0,)"
 			because "it requires Java 11"
@@ -1163,14 +1163,14 @@ bom {
 			]
 		}
 	}
-	library("Log4j2", "2.17.2.1-backpatch-00001") {
+	library("Log4j2", "2.17.2.1-osera-00001") {
 		group("org.apache.logging.log4j") {
 			imports = [
 				"log4j-bom"
 			]
 		}
 	}
-	library("Logback", "1.2.13.1-backpatch-00002") {
+	library("Logback", "1.2.13.1-osera-00002") {
 		group("ch.qos.logback") {
 			modules = [
 				"logback-access",
@@ -1480,7 +1480,7 @@ bom {
 			]
 		}
 	}
-	library("Reactor Bom", "2020.0.47.1-backpatch-00001") {
+	library("Reactor Bom", "2020.0.47.1-osera-00001") {
 		considerSnapshots()
 		calendarName = "Reactor"
 		group("io.projectreactor") {
@@ -1680,7 +1680,7 @@ bom {
 			]
 		}
 	}
-	library("SnakeYAML", "1.33.1-backpatch-00001") {
+	library("SnakeYAML", "1.33.1-osera-00001") {
 		group("org.yaml") {
 			modules = [
 				"snakeyaml"
@@ -1741,7 +1741,7 @@ bom {
 			]
 		}
 	}
-	library("Spring Data Bom", "2021.2.18.1-backpatch-00006") {
+	library("Spring Data Bom", "2021.2.18.1-osera-00006") {
 		considerSnapshots()
 		calendarName = "Spring Data Release"
 		prohibit {
@@ -1766,7 +1766,7 @@ bom {
 			]
 		}
 	}
-	library("Spring GraphQL", "1.0.6.1-backpatch-00002") {
+	library("Spring GraphQL", "1.0.6.1-osera-00002") {
 		considerSnapshots()
 		group("org.springframework.graphql") {
 			modules = [
@@ -1775,7 +1775,7 @@ bom {
 			]
 		}
 	}
-	library("Spring HATEOAS", "1.5.6.1-backpatch-00002") {
+	library("Spring HATEOAS", "1.5.6.1-osera-00002") {
 		considerSnapshots()
 		prohibit {
 			versionRange "[2.0.0-M1,)"
@@ -1808,7 +1808,7 @@ bom {
 			]
 		}
 	}
-	library("Spring LDAP", "2.4.4.1-backpatch-00001") {
+	library("Spring LDAP", "2.4.4.1-osera-00001") {
 		considerSnapshots()
 		prohibit {
 			versionRange "[3.0.0-M1,)"
@@ -1844,7 +1844,7 @@ bom {
 			]
 		}
 	}
-	library("Spring Security", "5.7.14.1-backpatch-00005") {
+	library("Spring Security", "5.7.14.1-osera-00005") {
 		considerSnapshots()
 		prohibit {
 			versionRange "[6.0.0-M1,)"
@@ -1868,7 +1868,7 @@ bom {
 			]
 		}
 	}
-	library("Spring WS", "3.1.8.1-backpatch-00002") {
+	library("Spring WS", "3.1.8.1-osera-00002") {
 		considerSnapshots()
 		prohibit {
 			versionRange "[4.0.0-M1,)"
