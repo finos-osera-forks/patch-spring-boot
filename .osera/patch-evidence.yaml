@@ -1,7 +1,7 @@
 # Licensed under the Apache License, Version 2.0: https://www.apache.org/licenses/LICENSE-2.0
 schema: osera-patch-evidence/0.1.0
 producer: moderne
-release: 2.7.18.1-osera-00091
+release: 2.7.18.1-osera-00092
 baseline: v2.7.18+patch.baseline
 fixes:
   - cve: CVE-2016-1000027
@@ -1488,12 +1488,21 @@ fixes:
     artifacts:
       - org.springframework:spring-web
       - org.springframework:spring-webmvc
-    note: New in this release; ported onto 2.7.18; fixed at 5.3.39.1-backpatch-00017 (backpatch-spring-framework@528428e).
+    note: Carried from 2.7.18.1-backpatch-00091; ported onto 2.7.18; fixed at 5.3.39.1-backpatch-00017 (backpatch-spring-framework@528428e).
+  - cve: CVE-2026-59313
+    upstream_fix_url: https://github.com/advisories/GHSA-cqhh-73qg-8434
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-59313
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-spring-framework/commit/1a711cc
+    basis: adapted
+    artifacts:
+      - org.springframework:spring-web
+      - org.springframework:spring-webmvc
+    note: New in this release; ported onto 2.7.18; fixed at 5.3.39.1-backpatch-00018 (backpatch-spring-framework@1a711cc).
 tests:
-  commit: 8111a1f3545b34c3b23a031a350ce98d3940be19
+  commit: af5421449f7988b52d853b757d8d1e4be124afcf
   command: none in this repository
   runtime: none, no build or test ran for this release
-  report: spring-web-5.3.39.1-osera-00017-tests.zip
-  report_sha256: 149ce73af792b24b74d9ad5107877a9e83e73ca592923aa755019bc15f92e35c
+  report: spring-web-5.3.39.1-osera-00018-tests.zip
+  report_sha256: 9d6211d69e10183e32a486a3109acf907700c12da721e69e27f25d678b2b92c0
   result: pass
-  note: this release changes only the versions this repository pins, nothing ran here; its test provenance is CVE-2026-22735 carried by moderne-backpatch-alliance/backpatch-spring-framework at v5.3.39.1-backpatch-00017, whose .backpatch/patch-evidence.yaml records the tests that ran
+  note: this release changes only the versions this repository pins, nothing ran here; its test provenance is CVE-2026-59313 carried by moderne-backpatch-alliance/backpatch-spring-framework at v5.3.39.1-backpatch-00018, whose .backpatch/patch-evidence.yaml records the tests that ran
