@@ -1,7 +1,7 @@
 # Licensed under the Apache License, Version 2.0: https://www.apache.org/licenses/LICENSE-2.0
 schema: osera-patch-evidence/0.1.0
 producer: moderne
-release: 2.7.18.1-osera-00109
+release: 2.7.18.1-osera-00110
 baseline: v2.7.18+patch.baseline
 fixes:
   - cve: CVE-2016-1000027
@@ -1596,9 +1596,9 @@ fixes:
       - org.eclipse.jetty.http2:http2-common
     note: Carried from 2.7.18.1-backpatch-00104; ported onto 2.7.18; fixed at 9.4.58.v20250814-backpatch-00012 (backpatch-jetty.project@7abc7b8).
 tests:
-  commit: 130e73a6ac1b9816f9f21c2fe72415f7b825f1cc
+  commit: c0e49c14624c6c6ca02d0c2b784bb560bb504331
   command: none in this repository
   runtime: none, no build or test ran for this release
   report: carried, see the evidence of the release named in the note
   result: pass
-  note: "this release is a tooling update, it carries no new fix, nothing ran here; its test provenance is tooling-2026-11-03-log4j2-2.17: a tooling update of moderne-backpatch-alliance/backpatch-spring-boot at v2.7.18.1-backpatch-00108, whose .backpatch/patch-evidence.yaml says what ran"
+  note: "this release is a tooling update, it carries no new fix, nothing ran here; its test provenance is tooling-2026-11-03-logback-1.2: a tooling update of moderne-backpatch-alliance/backpatch-spring-boot at v2.7.18.1-backpatch-00109, whose .backpatch/patch-evidence.yaml says what ran"
